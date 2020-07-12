@@ -1,0 +1,376 @@
+    /*.footer {
+        background-color: $color-primario;
+        width: 100%;
+        margin-top: 10%;
+
+        &__container {
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            &--left {
+                background-color: $color-terciario;
+                display: flex;
+                height: 75%;
+                width: 65%
+            }
+
+            &--right {
+                background-color: $color-terciario;
+                width: 35%;
+                height: 75%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 50px 50px;
+
+
+
+            }
+
+            &--labelsLeft {
+                position: relative;
+                top: 65%;
+            }
+        }
+    }
+
+    .instagramLogo,
+    .facebookLogo {
+        width: 60px;
+        height: 60px;
+        padding-left: 43px;
+        padding-bottom: 15px;
+        padding-top: 3rem;
+
+    }
+
+    .companyLogo {
+        padding-left: 25rem;
+        height: 100px;
+        width: 180px;
+        padding-top: 22px;
+    }
+
+    .labelFooter {
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        font-size: 1px;
+        margin-left: 5px
+    }
+
+
+
+
+    @media only screen and (max-width:1150px) {
+        .footer .companyLogo {
+            padding-left: 10rem;
+        }
+
+        .footer .instagramLogo {
+
+            width: 60px;
+            height: 60px;
+            padding-left: 95px;
+            padding-bottom: 1px;
+            padding-top: 1px;
+            margin-top: 46px;
+        }
+
+        .footer .facebookLogo {
+            width: 60px;
+            height: 60px;
+            padding-left: 1px;
+            padding-bottom: 15px;
+            padding-top: 3rem;
+        }
+
+        .footer__container--left {
+            background-color: $color-terciario;
+            width: 65%;
+        }
+
+        .footer__container--right {
+            background-color: $color-terciario;
+            width: 35%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+
+
+
+
+    @media only screen and (max-width:854px) {
+        .footer .companyLogo {
+            padding-left: 13rem;
+            padding-top: 32px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .footer .instagramLogo {
+
+            width: 30px;
+            height: 30px;
+            padding-left: 95px;
+            padding-bottom: 1px;
+            padding-top: 1px;
+
+            margin-top: 60px;
+        }
+
+        .footer .facebookLogo {
+            width: 30px;
+            height: 30px;
+            padding-left: 1px;
+            padding-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .footer__container--left {
+            background-color: $color-terciario;
+            width: 65%;
+        }
+
+        .footer__container--right {
+            background-color: $color-terciario;
+            width: 35%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+
+    }
+
+    @media only screen and (max-width:653px) {
+        .footer .companyLogo {
+            padding-left: 8rem;
+            padding-top: 32px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .footer .instagramLogo {
+
+            width: 30px;
+            height: 30px;
+            padding-left: 45px;
+            padding-bottom: 1px;
+            padding-top: 1px;
+
+            margin-top: 60px;
+        }
+
+        .footer .facebookLogo {
+            width: 30px;
+            height: 30px;
+            padding-left: 1px;
+            padding-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .footer__container--left {
+            background-color: $color-terciario;
+            width: 65%;
+        }
+
+        .footer__container--right {
+            background-color: $color-terciario;
+            width: 35%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .footer__list--right {
+
+            padding-left: 0rem;
+            padding-top: 54px;
+
+        }
+
+        .footer__container--labelsLeft {
+            display: inline-grid;
+            position: inherit;
+        }
+
+        .footer__container--labelsRight {
+            position: relative;
+            top: 65%;
+            display: inline-grid;
+        }
+
+
+    }
+
+    @media only screen and (max-width:496px) {
+        .footer .companyLogo {
+            padding-left: 4rem;
+            padding-top: 48px;
+            width: 50px;
+            height: 50px
+        }
+
+        .footer .instagramLogo {
+
+            width: 30px;
+            height: 30px;
+            padding-left: 45px;
+            padding-bottom: 1px;
+            padding-top: 1px;
+
+            margin-top: 60px;
+        }
+
+        .footer .facebookLogo {
+            width: 30px;
+            height: 30px;
+            padding-left: 1px;
+            padding-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .footer__container--left {
+            background-color: $color-terciario;
+            width: 65%;
+        }
+
+        .footer__container--right {
+            background-color: $color-terciario;
+            width: 35%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+    @media only screen and (max-width:321px) {
+        .footer .companyLogo {
+            padding-left: 2rem;
+            padding-top: 48px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .footer .instagramLogo {
+
+            width: 30px;
+            height: 30px;
+            padding-left: 42px;
+            padding-bottom: 1px;
+            padding-top: 1px;
+
+            margin-top: 60px;
+        }
+
+        .footer .facebookLogo {
+            width: 30px;
+            height: 30px;
+            padding-left: 1px;
+            padding-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .footer__container--left {
+            background-color: $color-terciario;
+            width: 65%;
+        }
+
+        .footer__container--right {
+            background-color: $color-terciario;
+            width: 35%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    */
+
+    .footer {
+        background: -webkit-linear-gradient(top, rgba(209, 244, 255, 1) 0%, rgba(179, 213, 249, 1) 24%, rgba(119, 180, 245, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        /* Chrome10-25,Safari5.1-6 */
+
+        height: 20%;
+        margin-top: 10%;
+
+        &__container {
+            height: 200px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 100px;
+            grid-gap: 20px;
+            color: black;
+
+            &__logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &--left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &--right {
+                display: block;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+        }
+
+        .companyLogo {
+            width: auto;
+            max-width: 300px;
+
+        }
+
+        .instagramLogo,
+        .facebookLogo {
+            width: 60px;
+            height: 60px;
+            padding-left: 43px;
+            padding-bottom: 15px;
+            padding-top: 3rem;
+
+
+        }
+
+
+
+        @media only screen and(max-width:675px) {
+
+            &__container {
+                height: auto;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+
+                &--right {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                }
+            }
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+    }

@@ -1,0 +1,27 @@
+.title{
+  text-align: center;
+  &__article{
+    @media only screen and  (max-width: 700px) {
+      text-align: center;
+    }
+  }
+ 
+  
+}
+.paragraph{
+    &_iz{
+      @media only screen and  (min-width: 700px) {
+        align-items: right;
+        display:inline-block;
+         text-align: left;
+      }
+   
+    }
+    &_der{
+      @media only screen and   (min-width: 700px) {
+      align-items: left;
+      display: inline-block;
+      text-align: right;
+      }
+    }
+}

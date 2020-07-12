@@ -1,0 +1,77 @@
+.table {
+    
+    &__proyecto {
+        background: yellow;
+        width: 100%;
+        margin-left: 5%;
+
+        @media screen and (max-width: 500px) {
+            table {
+              display: block;
+              overflow-x: auto;
+              width: 90%;
+            }
+       }
+    }
+
+    &__headProyecto {
+        background: $color-terciario;
+        color:white;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        font-size: large;
+    }
+
+    &__bodyProyecto {
+        background: $color-primario;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        font-size: large;
+
+    }
+
+    &__proyecto--btnDelete {
+        background-color: white;
+        color: black;
+        border: 2px solid #0c0c0c;
+        padding: 15px 20px;
+    }
+
+    &__proyecto--btnDelete:hover {
+        background-color: $color-terciario;
+        color: white;
+    }
+
+    &__proyecto--btnEdit {
+        background-color: white;
+        color: black;
+        border: 2px solid #0c0c0c;
+        padding: 15px 30px;
+        width: 125px;
+        height: 50px;
+    }
+
+    &__proyecto--btnEdit:hover {
+        background-color: $color-terciario;
+        color: white;
+        width: 125px;
+        height: 50px;
+
+    }
+
+    &__proyecto--btntables{
+        background-color: white;
+        color: black;
+        border: 2px solid #0c0c0c;
+        padding: 5px 15px;
+        width: 85px;
+        height: 35px;
+    }
+    &__proyecto--btntables:hover {
+        background-color: $color-terciario;
+        color: white;
+    }
+
+}

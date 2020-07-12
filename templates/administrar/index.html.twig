@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Administrar Proyectos{% endblock %}
+
+{% block body %}
+
+
+<section class="section__administrarContainer">
+    <div class="section__administrarContainer--top">
+        
+        
+    
+        <h1>Administrar Proyectos</h1>
+    </div>   
+    
+    <div class="section__administrarContainer--bottom">
+        <button class="btn__image--proposalsProyect"><img src="{{asset('img/carpetaProject.png')}}" alt=""><span><span>PROPUESTAS</span></span></button>
+        <button class="btn__image--addProyect"><a class="section__administrarContainer--links" href="{{ path('proyecto_new') }}"><img src="{{asset('img/addProject.png')}}" alt=""><span><span>AGREGAR PROYECTOS</span></span></a></button>
+        <button class="btn__image--editProyect"><a class="section__administrarContainer--links" href="{{ path('proyecto_index') }}"><img src="{{asset('img/editProject.png')}}" alt=""><span><span>EDITAR PROYECTOS</span></span></a></button>
+    </div>
+    
+</section>
+{% endblock %}

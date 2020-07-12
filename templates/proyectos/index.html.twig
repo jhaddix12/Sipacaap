@@ -1,0 +1,114 @@
+{% extends 'base.html.twig' %} {% block title %}Proyectos{% endblock %} {% block
+body %}
+<section>
+  <article class="projectContainer">
+    <div class="projectContainer__containFilters__title2">
+      <h1>
+        Proyectos
+      </h1>
+      <div class="projectContainer__containFilters__title">
+        <div class="projectContainer__containFilters">
+          <label><strong>Ver por rango de fechas</strong></label>
+          <div class="projectContainer__filters">
+            <input type="date" id="fechaInicio" name="fechaInicio" />
+            <input type="date" id="fechaFinal" name="fechaFinal" />
+          </div>
+        </div>
+
+        <div class="projectContainer__containFilters">
+          <label><strong>Ver proyecto por lugar</strong></label>
+          <div class="projectContainer__filters">
+            <select name="lugar" id="lugar">
+              <option value="costaPajaros">Costa Pájaros</option>
+              <option value="islaPajarita">Isla Pajarita</option>
+              <option value="puntaMorales">Punta Morales</option>
+              <option value="manzanillo">Manzanillo</option>
+            </select>
+            <input type="text" placeholder="Buscar.." name="buscar" />
+            <input type="button" value="Buscar" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div class="section__project">
+    <article class="article article__projectBackground" id="article1">
+      <h1 class="article__projectTitle">Desove de tortugas</h1>
+      <img
+        src="{{ asset('img/proyecto1.png') }}"
+        class="article__projectImage"
+      />
+      <label class="article__projectLabel"
+        ><strong>Ubicación:</strong> Manzanillo</label
+      >
+      <label class="article__projectLabel__right"
+        ><strong>Fecha:</strong> 11/01/2021</label
+      >
+      <input
+        type="button"
+        value="Ver más"
+        id="button1"
+        class="article__projectButton"
+        onclick="viewMore()"
+      />
+      <section class="article__view" id="view1">
+        <label class="article__projectLabel"
+          ><strong>Descripción</strong></label
+        >
+        <p class="article__projectDescription">
+          Ayuda como voluntario en el desovede de la especie de tortuga
+          baula.<br /><br />
+        </p>
+        <label class="article__projectLabel"
+          ><strong>Hora:</strong> 8:00 am<br /><br
+        /></label>
+        <label class="article__projectLabel"
+          ><strong>Guía de la exursión</strong>: Anthony Muñoz<br /><br
+        /></label>
+        <input
+          type="button"
+          value="Ver menos"
+          class="article__projectButton__left"
+          onclick="viewLess()"
+        />
+        <input
+          type="button"
+          value="Participar"
+          class="article__projectButton__right"
+        />
+      </section>
+    </article>
+
+    <article class="article article__projectBackground">
+      <h1 class="article__projectTitle">Paseo a Punta Morales</h1>
+      <img
+        src="{{ asset('img/proyecto2.png') }}"
+        class="article__projectImage"
+      />
+      <label class="article__projectLabel">Ubicación: Costa de Pajaros</label>
+      <label class="article__projectLabel__right">Fecha: 11/02/2021</label>
+      <input type="button" value="Ver más" class="article__projectButton" />
+    </article>
+
+    <article class="article article__projectBackground">
+      <h1 class="article__projectTitle">Excursión a la Isla Pajarita</h1>
+      <img
+        src="{{ asset('img/proyecto3.png') }}"
+        class="article__projectImage"
+      />
+      <label class="article__projectLabel">Ubicación: Puntarenas</label>
+      <label class="article__projectLabel__right">Fecha: 18/02/2021</label>
+      <input type="button" value="Ver más" class="article__projectButton" />
+    </article>
+
+    <article class="article article__projectBackground">
+      <h1 class="article__projectTitle">Limpieza de la playa</h1>
+      <img alt="Demo Image" src="{{ asset('img/islapajaro.png') }}" class="article__projectImage" />
+      <label class="article__projectLabel">Ubicación: Isla pajaro</label>
+      <label class="article__projectLabel__right">Fecha: 19/03/2021</label>
+      <input type="button" value="Ver más" class="article__projectButton" />
+    </article>
+  </div>
+</section>
+{% endblock %}

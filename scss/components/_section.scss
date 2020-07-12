@@ -1,0 +1,190 @@
+.section {
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @media only screen and (min-width: 700px) {
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+    }
+
+    &__project {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        @media only screen and (max-width: 700px) {
+            flex-direction: column;
+        }
+
+    }
+
+    &__edit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+
+    &--datos {
+        max-width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    &__crud {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (min-width: 700px) {
+            flex-direction: column;
+        }
+
+    }
+
+    &__administrarContainer {
+        height: 50%;
+
+
+        &--top {
+
+            height: 50%;
+            text-align: right;
+        }
+
+        &--bottom {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 90px 30px 225px 230px;
+        }
+
+        &--links:visited,
+        &--links:link,
+        &--links:active {
+
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn__image--logOut {
+            height: 50px;
+            width: 50px;
+
+
+        }
+
+        .btn__image--proposalsProyect,
+        .btn__image--addProyect,
+        .btn__image--editProyect {
+            width: 165px;
+            height: 125px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        span span {
+            background: rgba(0, 0, 0, 0.4);
+            display: block;
+            padding: 3px;
+            text-shadow: 0 0 15px white;
+        }
+
+        @media only screen and (max-width:884px) {
+            &--bottom {
+                margin: 90px 30px 225px 112px;
+            }
+        }
+
+        @media only screen and (max-width:700px) {
+            &--bottom {
+                margin: 90px 30px 225px 60px;
+            }
+        }
+
+        @media only screen and (max-width:580px) {
+            &--bottom {
+                margin: 90px 30px 225px 30px;
+            }
+
+        }
+
+        @media only screen and (max-width:524px) {
+            &--bottom {
+                margin: 90px 30px 225px 10px;
+            }
+
+        }
+
+        @media only screen and (max-width:496px) {
+            &--bottom {
+                display: grid;
+                grid-template-columns: repeat(1, 3fr);
+                grid-gap: 2rem;
+                margin: 90px 0 120px 140px;
+            }
+
+        }
+
+        @media only screen and (max-width:375px) {
+            &--bottom {
+                margin: 90px 0 120px 100px;
+            }
+
+        }
+
+    }
+}
+
+
+.proyectoIndex {
+    max-width: 100%;
+
+    &__Container--top {
+        text-align: right;
+    }
+
+    &__Container--bottom {
+        margin-right: 10%;
+        margin-top: 5rem;
+        margin-bottom: 9rem;
+    }
+
+    @media only screen and (max-width:1330px) {
+        &__Container--bottom {
+            margin-right: 10%;
+            margin-top: 5rem;
+            margin-bottom: 9rem;
+        }
+    }
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.botones {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 17px;
+}

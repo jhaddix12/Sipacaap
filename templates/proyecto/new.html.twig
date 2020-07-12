@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %} {% block title %}Nuevo Proyecto{% endblock %} {%
+block body %}
+
+<h1>Agregar Nuevo Proyecto</h1>
+<section class="section__edit">
+  <article class="article__crud">
+    {{ include("proyecto/_form.html.twig") }}
+  </article>
+  <a href="{{ path('administrar') }}"><button class="botones table__proyecto--btnEdit">Regresar</button></a>
+</section>
+
+{% endblock %}    

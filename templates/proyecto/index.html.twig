@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %} {% block title %}Gestion Proyecto{% endblock %} {%
+block body %}
+<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" />
+
+<section class="proyectoIndex">
+
+  <div class="proyectoIndex__Container--top">
+    <button class="btn__image--logOut">
+      <img src="{{ asset('img/logout_2.png') }}" alt="" />
+    </button>
+  </div>
+
+  <h1>Propuestas de proyectos</h1>
+  <div class="table-responsive"> 
+    <div class="proyectoIndex__Container--bottom">
+      <table class="table table__proyecto">
+        <thead class="table__headProyecto">
+          <tr>
+            <th>Nombre Proyecto</th>
+            <th>Nombre Guia</th>
+            <th>Ubicación</th>
+            <th>Fecha</th>
+             <th>Foto</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody class="table__bodyProyecto">
+          {% for proyecto in proyectos %}
+          <tr>
+            <td>{{ proyecto.nombreProyecto }}</td>
+            <td>{{ proyecto.nombreGuia }}</td>
+            <td>{{ proyecto.ubicacion }}</td>
+            <td>{{ proyecto.fecha ? proyecto.fecha|date('Y-m-d') : '' }}</td>
+            <td><img style="height:80px; height:80px;" src="{{asset("uploads/fotos/" ~ proyecto.foto)}}" alt="" /></td>
+            <td>{{ proyecto.descripcion }}</td>
+            <td>
+              <form method="post" action="{{ path('proyecto_edit', {'id': proyecto.id}) }}">
+              <button class="botones table__proyecto--btntables">Editar</button>
+             </form>
+              {{ include('proyecto/_delete_form.html.twig') }}
+            </td>
+          </tr>
+          {% else %}
+          <tr>
+            <td colspan="8">No hay proyectos registrados</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+  
+      
+  
+      <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    </div>
+  </div>
+ 
+</section>
+{% endblock %}
+

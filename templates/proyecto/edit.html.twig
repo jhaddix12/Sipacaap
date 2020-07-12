@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %} {% block title %}Editar Proyecto{% endblock %} {%
+block body %}
+<h1>Editar Proyecto</h1>
+<section class="section__edit">
+  <article class="article__crud">
+
+    {{ include("proyecto/_form.html.twig", { button_label: "Actualizar" }) }}
+    <article class="section__edit">
+      <a href="{{ path('proyecto_index') }}"><button class="botones table__proyecto--btnEdit">Regresar</button></a>
+
+    </article>
+   
+
+  </article>
+</section>
+{% endblock %}

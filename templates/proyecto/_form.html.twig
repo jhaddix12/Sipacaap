@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" />
+{{ form_start(form) }}
+
+
+<article class="section__edit">
+    {{ form_widget(form) }}
+    <button class="botones table__proyecto--btnEdit">{{ button_label|default('Agregar') }}</button>
+    
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    {{ form_end(form) }}
+
+</article>
+
